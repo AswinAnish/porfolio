@@ -87,6 +87,79 @@ h3 {
   }
 }
 
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+  .et-hero-tabs-container {
+    height: 60px;
+    flex-wrap: wrap;
+  }
+
+  .et-hero-tab {
+    font-size: 0.7rem;
+    padding: 8px 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .et-hero-tabs,
+  .et-slide {
+    padding: 0 1.5em;
+    height: auto !important;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  hr {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .et-hero-tabs-container {
+    height: 50px;
+  }
+
+  .et-hero-tab {
+    font-size: 0.65rem;
+    padding: 6px 2px;
+    letter-spacing: 0;
+  }
+
+  .et-hero-tabs,
+  .et-slide {
+    padding: 0 1em;
+    height: auto !important;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .linksname {
+    font-size: 1.2rem;
+  }
+}
+
 .et-hero-tabs-container--top {
   position: fixed;
   top: 0;

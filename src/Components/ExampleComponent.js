@@ -20,9 +20,9 @@ const ExampleComponent = () => {
         sequence={[
           'Developer',
           650, // Adjust the speed here, smaller values make the animation faster
-          'Gamer',
-          650,
           'Freelancer',
+          650,
+          'Devops Engineer',
           650
         ]}
         wrapper="span"

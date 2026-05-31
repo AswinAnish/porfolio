@@ -30,9 +30,9 @@ const Resume = () => {
         {/* Download */}
         <div className="card text-center custom-card">
           <div className="card-header">Featured</div>
-          <div className="card-body">
+          <div className="card-body" style={{ paddingTop: '15px', paddingBottom: '15px' }}>
             <h5 className="card-title">AswinAnish.pdf</h5>
-            <p className="card-text">Click on the button to download my Resume.</p>
+            <p className="card-text" style={{ margin: '8px 0' }}>Click on the button to download my Resume.</p>
             <a href="/" className="btn btn-primary" onClick={handleDownload}>
               Download
             </a>
@@ -48,6 +48,8 @@ const Resume = () => {
               background: rgba(255, 255, 255, 0.2);
               border: 1px solid rgba(255, 255, 255, 0.2);
               border-radius: 12px;
+              max-width: 500px;
+              margin: 0 auto;
               overflow: hidden;
               transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

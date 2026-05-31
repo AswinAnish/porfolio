@@ -1,25 +1,95 @@
 .card-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 30px;
   flex-wrap: wrap;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .custom-card {
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  width: 350px;
+  flex: 0 1 auto;
 }
 
 .custom-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .card-img-top {
   border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  margin: 5px 0 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column !important;
+    gap: 15px;
+    padding: 0 15px;
+    justify-content: center !important;
+  }
+
+  .custom-card {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 auto !important;
+    width: 100%;
+  }
+
+  .custom-card:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column !important;
+    gap: 10px;
+    padding: 0 10px;
+    justify-content: center !important;
+  }
+
+  .custom-card {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 auto !important;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
 }
 
 
